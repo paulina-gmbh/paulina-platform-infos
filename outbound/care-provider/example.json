@@ -1,0 +1,75 @@
+{
+  "id": "b50e5cb4-cfda-4cbc-8962-eedeaf69944b",
+  "assessment": {
+    "hobbies": ["COMPUTER"],
+    "hobbiesOther": "ddd",
+    "smoker": true,
+    "introductionGenerated": ""
+  },
+  "personalInformation": {
+    "givenName": "Max",
+    "familyName": "Mustermann",
+    "country": "BG",
+    "gender": "MALE",
+    "dateOfBirth": "1988-08-22"
+  },
+  "preferences": {
+    "smokingHousehold": "NO",
+    "multipleCareRecipients": true,
+    "gender": "NONE",
+    "mobility": "IMMOBILE",
+    "regionType": "RURAL",
+    "dementia": "MILD",
+    "nightShifts": "RARELY",
+    "relativesAvailable": "NO",
+    "otherResidents": "NO",
+    "pets": "YES",
+    "activities": [
+      "DOMESTIC_TASKS",
+      "DRESSING",
+      "FEEDING",
+      "INTIMATE_HYGIENE",
+      "MOBILITY",
+      "MOBILIZATION",
+      "PERSONAL_HYGIENE"
+    ],
+    "conditions": [
+      "CANCER",
+      "CATHETER",
+      "CHRONIC_PAIN",
+      "COGNITIVE_IMPAIRMENT",
+      "DIABETES",
+      "DIALYSIS",
+      "FEEDING_TUBE",
+      "INCONTINENCE",
+      "MOBILITY_IMPAIRMENT"
+    ],
+    "lifting": "LIGHT",
+    "salary": 2222,
+    "daysBetweenAssignments": 14,
+    "availableFrom": "2025-08-29"
+  },
+  "workExperience": {
+    "languageProficiency": "NONE",
+    "yearsExperienceInDe": 11,
+    "yearsExperienceTotal": 22,
+    "driversLicense": true,
+    "activities": [
+      "DOMESTIC_TASKS",
+      "DRESSING",
+      "FEEDING",
+      "INTIMATE_HYGIENE",
+      "MOBILITY",
+      "MOBILIZATION",
+      "PERSONAL_HYGIENE"
+    ],
+    "conditions": ["FEEDING_TUBE", "DIALYSIS"]
+  },
+  "communication": {
+    "language": "DE"
+  },
+  "documents": {
+    "profilePicture": "https://example.com/profile-pictures/dummy-profile.png"
+  },
+  "version": "1b23ced9-82c6-4d31-bc59-6b3c02dd9736"
+}
