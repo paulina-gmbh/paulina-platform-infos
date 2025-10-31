@@ -116,7 +116,6 @@
           "type": ["string", "null"]
         }
       },
-      "required": [],
       "additionalProperties": false
     },
     "Paulina24_CPP_CareProviderPersonalInformation": {
