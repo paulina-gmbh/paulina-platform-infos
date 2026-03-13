@@ -43,7 +43,8 @@
     "communication",
     "version"
   ],
-  "additionalProperties": false,
+  "additionalProperties": false
+  ,
   "$defs": {
     "Paulina24_CPP_CareActivity": {
       "type": "string",
@@ -57,7 +58,8 @@
         "MOBILITY",
         "DOMESTIC_TASKS"
       ]
-    },
+    }
+    ,
     "Paulina24_CPP_CareProviderAssessment": {
       "type": "object",
       "description": "Platform-generated assessment information about the care provider, including hobbies, smoking status, and AI-generated introduction",
@@ -89,7 +91,8 @@
         "introductionGenerated"
       ],
       "additionalProperties": false
-    },
+    }
+    ,
     "Paulina24_CPP_CareProviderCommunication": {
       "type": "object",
       "description": "Communication settings for the care provider, including preferred platform language",
@@ -99,9 +102,12 @@
           "$ref": "#/$defs/Paulina24_CPP_Language"
         }
       },
-      "required": ["language"],
+      "required": [
+        "language"
+      ],
       "additionalProperties": false
-    },
+    }
+    ,
     "Paulina24_CPP_CareProviderPersonalInformation": {
       "type": "object",
       "description": "Basic personal details of the care provider including name, country, gender, and age",
@@ -136,7 +142,8 @@
         "dateOfBirth"
       ],
       "additionalProperties": false
-    },
+    }
+    ,
     "Paulina24_CPP_CareProviderPreferences": {
       "type": "object",
       "description": "Care provider's preferences and requirements for care assignments, including environmental, care recipient characteristics, and compensation expectations",
@@ -232,7 +239,8 @@
         "availableFrom"
       ],
       "additionalProperties": false
-    },
+    }
+    ,
     "Paulina24_CPP_CareProviderWorkExperience": {
       "type": "object",
       "description": "Care provider's professional experience including language skills, years of experience, licenses, and care competencies",
@@ -277,12 +285,19 @@
         "conditions"
       ],
       "additionalProperties": false
-    },
+    }
+    ,
     "Paulina24_CPP_Dementia": {
       "type": "string",
       "description": "Severity level of dementia in care recipients, indicating the level of cognitive care required",
-      "enum": ["NONE", "MILD", "MODERATE", "SEVERE"]
-    },
+      "enum": [
+        "NONE",
+        "MILD",
+        "MODERATE",
+        "SEVERE"
+      ]
+    }
+    ,
     "Paulina24_CPP_EuEftaCountryCode": {
       "type": "string",
       "description": "EU and EFTA country codes representing valid countries of origin for care providers on the platform",
@@ -319,17 +334,29 @@
         "NO",
         "CH"
       ]
-    },
+    }
+    ,
     "Paulina24_CPP_Gender": {
       "type": "string",
       "description": "Gender identity options for care provider profiles",
-      "enum": ["DIVERSE", "FEMALE", "MALE"]
-    },
+      "enum": [
+        "DIVERSE",
+        "FEMALE",
+        "MALE"
+      ]
+    }
+    ,
     "Paulina24_CPP_GenderPreference": {
       "type": "string",
       "description": "Care provider's preference for the gender of care recipients they work with",
-      "enum": ["DIVERSE", "FEMALE", "MALE", "NONE"]
-    },
+      "enum": [
+        "DIVERSE",
+        "FEMALE",
+        "MALE",
+        "NONE"
+      ]
+    }
+    ,
     "Paulina24_CPP_HealthCondition": {
       "type": "string",
       "description": "Medical conditions and health challenges the care provider has experience managing",
@@ -344,7 +371,8 @@
         "DIALYSIS",
         "FEEDING_TUBE"
       ]
-    },
+    }
+    ,
     "Paulina24_CPP_Hobby": {
       "type": "string",
       "description": "Recreational activities and interests of the care provider for matching with care recipients who share similar hobbies",
@@ -365,56 +393,117 @@
         "KNITTING_CROCHET",
         "THEATER"
       ]
-    },
+    }
+    ,
     "Paulina24_CPP_Language": {
       "type": "string",
       "description": "Languages supported on the platform for care provider-recipient communication",
-      "enum": ["EN", "DE", "PL", "BG", "RO"]
-    },
+      "enum": [
+        "EN",
+        "DE",
+        "PL",
+        "BG",
+        "RO"
+      ]
+    }
+    ,
     "Paulina24_CPP_LanguageProficiency": {
       "type": "string",
       "description": "Level of proficiency in a language, from no knowledge to native fluency",
-      "enum": ["NONE", "BASIC", "INTERMEDIATE", "ADVANCED", "FLUENT"]
-    },
+      "enum": [
+        "NONE",
+        "BASIC",
+        "INTERMEDIATE",
+        "ADVANCED",
+        "FLUENT"
+      ]
+    }
+    ,
     "Paulina24_CPP_Lifting": {
       "type": "string",
       "description": "Physical lifting capability required or available, indicating the care provider's ability to assist with care recipient transfers",
-      "enum": ["NONE", "LIGHT", "MEDIUM", "HEAVY", "VERY_HEAVY"]
-    },
+      "enum": [
+        "NONE",
+        "LIGHT",
+        "MEDIUM",
+        "HEAVY",
+        "VERY_HEAVY"
+      ]
+    }
+    ,
     "Paulina24_CPP_Mobility": {
       "type": "string",
       "description": "Care recipient's level of physical mobility, from fully independent to immobile",
-      "enum": ["FULL", "PARTIAL", "ROLLATOR", "WHEELCHAIR", "IMMOBILE"]
-    },
+      "enum": [
+        "FULL",
+        "PARTIAL",
+        "ROLLATOR",
+        "WHEELCHAIR",
+        "IMMOBILE"
+      ]
+    }
+    ,
     "Paulina24_CPP_NightShiftFrequencyPreference": {
       "type": "string",
       "description": "How often the care provider is willing to perform night shift duties",
-      "enum": ["NONE", "RARELY", "SOMETIMES", "OFTEN"]
-    },
+      "enum": [
+        "NONE",
+        "RARELY",
+        "SOMETIMES",
+        "OFTEN"
+      ]
+    }
+    ,
     "Paulina24_CPP_OtherResidentsPreference": {
       "type": "string",
       "description": "Care provider's willingness to work in households with multiple residents beyond the care recipient",
-      "enum": ["YES", "NO", "UNIMPORTANT"]
-    },
+      "enum": [
+        "YES",
+        "NO",
+        "UNIMPORTANT"
+      ]
+    }
+    ,
     "Paulina24_CPP_PetsPreference": {
       "type": "string",
       "description": "Care provider's willingness to work in households with pets",
-      "enum": ["YES", "NO", "UNIMPORTANT"]
-    },
+      "enum": [
+        "YES",
+        "NO",
+        "UNIMPORTANT"
+      ]
+    }
+    ,
     "Paulina24_CPP_RegionPreference": {
       "type": "string",
       "description": "Care provider's preference for working in rural or urban environments",
-      "enum": ["RURAL", "URBAN", "UNIMPORTANT"]
-    },
+      "enum": [
+        "RURAL",
+        "URBAN",
+        "UNIMPORTANT"
+      ]
+    }
+    ,
     "Paulina24_CPP_RelativesAvailablePreference": {
       "type": "string",
       "description": "Care provider's preference regarding whether care recipient's relatives are present and involved",
-      "enum": ["YES", "NO", "UNIMPORTANT"]
-    },
+      "enum": [
+        "YES",
+        "NO",
+        "UNIMPORTANT"
+      ]
+    }
+    ,
     "Paulina24_CPP_SmokingHouseholdPreference": {
       "type": "string",
       "description": "Care provider's willingness to work in households where smoking is present",
-      "enum": ["YES", "NO", "UNIMPORTANT"]
+      "enum": [
+        "YES",
+        "NO",
+        "UNIMPORTANT"
+      ]
     }
+  
   }
 }
+
